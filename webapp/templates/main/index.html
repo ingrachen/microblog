@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+{% extends "barre.html" %}
+{% block content %}
+    <body>
+        <h1 style='color:green'> Bonjour ,  {{current_user.username}} !</h1>
+        {% for post in posts %}
+        <div>
+            <p>{{post.author.username }}{{ _(dit) }}: <b>{{ post.body}}</b></p>
+        </div>
+        {% endfor %}
+    </body>
+{% endblock %}
+</html>

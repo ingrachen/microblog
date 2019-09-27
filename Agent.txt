@@ -1,0 +1,1 @@
+{"conseiller": [{"mle": "0001", "login": "ag0001Scott", "date_debut": "2012-11-10", "date_fin": null}, {"mle": "0002", "login": "ag0002Larry", "date_debut": "2011-09-15", "date_fin": null}, {"mle": "0003", "login": "ag0003Tim", "date_debut": "2010-03-22", "date_fin": null}]}

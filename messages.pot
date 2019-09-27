@@ -1,0 +1,31 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-09-24 23:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: webapp/routes.py:43
+msgid "Login ou mot de passe invalide"
+msgstr "invalid login or password"
+
+#: webapp/routes.py:89
+msgid "consultez votre email et suivez les instructions"
+msgstr "Check your email and follow instructions"
+
+#: webapp/routes.py:104
+msgid "Votre mot de passe a été réinitialisé. "
+msgstr "your password has been reset"
+

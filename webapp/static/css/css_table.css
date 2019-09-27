@@ -1,0 +1,28 @@
+#myTable{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px
+
+
+
+    }
+#myTable td, #myTable th{
+    border: 1px solid #ddd;
+    padding: 10px;
+    }
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #4747d1;
+  color: white;
+
+}
+th {
+    heigth: 40px;
+    }
+
+tr:hover {background-color: #ffcccc}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css_table.css') }}">
+</head>
+{% extends "barre.html" %}
+{% block content %}
+<table id="myTable" >
+<tr>
+    <th>login</th>
+    <th>nom</th>
+    <th>prenom</th>
+    <th>email</th>
+
+</tr>
+{% for user in users %}
+    <tr>
+        {% for col in user.get_content() %}
+            <td>{{col|upper}}</td>
+        {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/mesStyles.css') }}">
+</head>
+<div id="inscription">
+{% extends "barre.html" %}
+{% block content %}
+    <h1 style='color:green'> Créez votre compte </h1>
+    <form action="{{ url_for('auth.inscription') }}" method="post">
+        {{inscript_form.hidden_tag() }}
+        <p>
+        {{inscript_form.username.label}}<br>
+        {{inscript_form.username(size=32)}}<br>
+
+            {% for error in inscript_form.username.errors %}
+                <span style='color:red'>[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+        {{inscript_form.nom.label}}<br>
+        {{inscript_form.nom(size=32)}}<br>
+
+            {% for error in inscript_form.nom.errors %}
+                <span style='color:red'>[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+        {{inscript_form.prenom.label}}<br>
+        {{inscript_form.prenom(size=32)}}<br>
+
+            {% for error in inscript_form.prenom.errors %}
+                <span style='color:red'>[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{inscript_form.email.label}}<br>
+            {{inscript_form.email(size=32)}}
+
+            {% for error in inscript_form.email.errors %}
+                <span style='color:red'>[{{ error }}]</span>
+            {% endfor %}
+
+        </p>
+        <p>
+            {{inscript_form.password.label}}<br>
+            {{inscript_form.password(size=32)}}
+
+            {% for error in inscript_form.password.errors %}
+                <span style='color:red'>[{{ error }}]</span>
+            {% endfor %}
+
+        </p>
+        <p>
+            {{ inscript_form.confirm.label }}<br>
+            {{inscript_form.confirm(size=32)}}
+
+            {% for error in inscript_form.confirm.errors %}
+                <span style='color:red'>[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>{{inscript_form.submit}}</p>
+    {% endblock %}
+</form>
+</div>>
+</html>
