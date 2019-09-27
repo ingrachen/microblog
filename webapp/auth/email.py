@@ -18,6 +18,7 @@ def send_email(subject, sender, recipients, text_body, html_body):
     #mail.send(msg)
     Thread(target=send_async_email, args=(current_app._get_current_object(), msg)).start()
 
+
 def send_password_reset_email(user):
     token = user.get_reset_password_token()
     send_email('Réinitialiser votre mot de passe', sender=current_app.config['MAIL_USERNAME'],

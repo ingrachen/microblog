@@ -18,6 +18,13 @@
             <a href="{{url_for('auth.logout')}}"> Déconnexion</a>
         {% endif %}
         <a href="/table"> Table</a>
+        <select name="langue" size="1">
+            <option>Français
+            <option>Anglais
+            <option>Espagnole
+            <option>Italien
+            <option>Allemand
+        </select>
     </div>
     <hr>
     {% with messages = get_flashed_messages() %}
